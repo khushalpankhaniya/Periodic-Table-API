@@ -2,7 +2,6 @@ import express from 'express'
 import { Table } from '../db/schema.js'
 const router = express.Router();
 
-// CRUD Routes for Elements
 router.get('/elements', async (req, res) => {
   try {
     const elements = await Table.find();
