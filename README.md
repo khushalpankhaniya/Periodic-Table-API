@@ -106,9 +106,9 @@ A RESTful API built with Express.js for managing and querying chemical element d
 - **GET** `api/v1/elements/search`
   - Search elements by query parameters.
   - **Query Parameters**:
-    - `name` (string) - The name of the element.
-    - `discoveryYear` (number) - The year the element was discovered.
-    - `discoveredBy` (string) - The scientist who discovered the element.
+    - `name` (string) - The name of the element (e.g., "Hydrogen").
+    - `discoveryYear` (number) - The year the element was discovered  (e.g., 1871).
+    - `discoveredBy` (string) - The scientist who discovered the element  (e.g., "Dmitri Mendeleev").
   - **Response**:
     ```json
     {
