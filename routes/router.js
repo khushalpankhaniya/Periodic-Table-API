@@ -111,7 +111,6 @@ router.delete('/elements/:atomicNumber', async (req, res) => {
   }
 });
 
-// Additional Routes (Optional)
 router.get('/elements/category/:category', async (req, res) => {
   const { category } = req.params;
 
