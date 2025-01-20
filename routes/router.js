@@ -14,7 +14,6 @@ router.get('/elements', async (req, res) => {
   }
 });
 
-// Search and Filter Routes
 router.get('/elements/search', async (req, res) => {
   const { name, discoveryYear , discoveredBy } = req.query;
 
