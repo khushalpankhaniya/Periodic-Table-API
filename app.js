@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1', Router);
 
 app.all('*', (req, res) => {
-  res.status(404).json('Page not found');
+  res.status(404).json('Page not found.');
 });
 
 const port = process.env.PORT || 3000;
