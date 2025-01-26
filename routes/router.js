@@ -2,7 +2,6 @@ import express from 'express'
 import { Table } from '../db/schema.js'
 const router = express.Router();
 
-// CRUD Routes for Elements
 router.get('/elements', async (req, res) => {
   try {
     const elements = await Table.find();
@@ -15,7 +14,6 @@ router.get('/elements', async (req, res) => {
   }
 });
 
-// Search and Filter Routes
 router.get('/elements/search', async (req, res) => {
   const { name, discoveryYear , discoveredBy } = req.query;
 
@@ -111,7 +109,6 @@ router.delete('/elements/:atomicNumber', async (req, res) => {
   }
 });
 
-// Additional Routes (Optional)
 router.get('/elements/category/:category', async (req, res) => {
   const { category } = req.params;
 
